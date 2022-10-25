@@ -315,13 +315,27 @@
 
 // setTimeout( function(){console.log('exeucte later after 1 secand')});   
 
-let person = {
-    firstName: 'John',
-    lastName: 'Doe'
-};
+// Error this code: let person = {
+//     firstName: 'John',
+//     lastName: 'Doe'
+// };
 
-(function () {
-    console.log(person.firstName} + ' ' + person.lastName);
-})(person);
+// (function () {
+//     console.log(person.firstName} + ' ' + person.lastName);
+// })(person);
+
+// var authors = document.getElementsByClassName('author');
+// console.log(authors);
+
+// for(i = 0; i <= authors.length; i++){
+//     var element = authors[i];
+//     element.style.backgroundColor = 'lightblue'
+// }
 
 
+const article = document.getElementById('first-article');
+const newParagraph = document.createElement('p');
+newParagraph.innerHTML = 'This line added by javaScript';
+article.appendChild(newParagraph);
+const color = document.getElementById('first-article');
+color.style.backgroundColor = 'lightgray'
