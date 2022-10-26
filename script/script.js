@@ -339,3 +339,6 @@ newParagraph.innerHTML = 'This line added by javaScript';
 article.appendChild(newParagraph);
 const color = document.getElementById('first-article');
 color.style.backgroundColor = 'lightgray'
+
+console.log(document.getElementById('gift').childNodes);
+document.getElementById('gift').parentNode
