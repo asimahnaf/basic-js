@@ -332,13 +332,51 @@
 //     element.style.backgroundColor = 'lightblue'
 // }
 
+// module 18
+// const article = document.getElementById('first-article');
+// const newParagraph = document.createElement('p');
+// newParagraph.innerHTML = 'This line added by javaScript';
+// article.appendChild(newParagraph);
+// const color = document.getElementById('first-article');
+// color.style.backgroundColor = 'lightgray'
 
-const article = document.getElementById('first-article');
-const newParagraph = document.createElement('p');
-newParagraph.innerHTML = 'This line added by javaScript';
-article.appendChild(newParagraph);
-const color = document.getElementById('first-article');
-color.style.backgroundColor = 'lightgray'
+// console.log(document.getElementById('gift').childNodes);
+// document.getElementById('gift').parentNode
 
-console.log(document.getElementById('gift').childNodes);
-document.getElementById('gift').parentNode
+// module 19
+// console.log(12);
+
+// function
+
+function even_odd(num){
+    if(num%2 == 0){
+        console.log(num, ': is even');
+    }
+    else{
+        console.log(num, ': is odd');
+    }
+}
+
+function even_oddall(num){
+    
+    for (let i = 0; i < num.length; i++) {
+        const element = num[i];
+        even_odd(element);
+    }
+}
+num = [ 12, 21, 42, 23, 43, 54, 44, 40, 34]
+
+// for (let i = 0; i < num.length; i++) {
+//     const element = num[i];
+//     sum = 1;
+//     if(element%2 == 0){
+//         console.log(element, " :number is even =", );
+//     }
+//     else{
+//         console.log(element, " :number is odd =");
+//     }
+// }
+
+frinds_age = [20, 22, 21, 10, 25, 23, 29];
+
+even_oddall(frinds_age);
