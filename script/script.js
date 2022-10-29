@@ -399,14 +399,18 @@
 // return function
 
 var array = [12, 21, 32, 42, 55, 53, 51, 44, 56]
-
+var evenArray  = [];
+var oddNumber = [];
 function retuRnThis(num){
     var result;
     result = num;
     if(result%2 == 0){
+        evenArray.push(result);
         return result*2;
+
     }
     else{
+        oddNumber.push(result);
         return result;
     }
 }
@@ -418,3 +422,5 @@ function LoopThisArray(num){
     }
 }
 LoopThisArray(array);
+console.log(evenArray);
+console.log(oddNumber);
