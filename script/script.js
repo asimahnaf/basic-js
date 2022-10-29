@@ -348,23 +348,37 @@
 
 // function
 
-function even_odd(num){
-    if(num%2 == 0){
-        console.log(num, ': is even');
-    }
-    else{
-        console.log(num, ': is odd');
-    }
-}
+// function even_odd(num){
+//     if(num%2 == 0){
+//         console.log(num, ': is even');
+//     }
+//     else{
+//         console.log(num, ': is odd');
+//     }
+// }
 
-function even_oddall(num){
+// function even_oddall(num){
     
-    for (let i = 0; i < num.length; i++) {
-        const element = num[i];
-        even_odd(element);
-    }
-}
-num = [ 12, 21, 42, 23, 43, 54, 44, 40, 34]
+//     for (let i = 0; i < num.length; i++) {
+//         const element = num[i];
+//         even_odd(element);
+//     }
+// }
+// for (let i = 0; i < num.length; i++) {
+//     const element = num[i];
+//     sum = 1;
+//     if(element%2 == 0){
+//         console.log(element, " :number is even =", );
+//     }
+//     else{
+//         console.log(element, " :number is odd =");
+//     }
+// }
+
+// frinds_age = [20, 22, 21, 10, 25, 23, 29];
+
+// even_oddall(frinds_age);
+// num = [ 12, 21, 42, 23, 43, 54, 44, 40, 34]
 
 // for (let i = 0; i < num.length; i++) {
 //     const element = num[i];
@@ -377,6 +391,30 @@ num = [ 12, 21, 42, 23, 43, 54, 44, 40, 34]
 //     }
 // }
 
-frinds_age = [20, 22, 21, 10, 25, 23, 29];
+// frinds_age = [20, 22, 21, 10, 25, 23, 29];
 
-even_oddall(frinds_age);
+// even_oddall(frinds_age);
+
+// _________________________________________
+// return function
+
+var array = [12, 21, 32, 42, 55, 53, 51, 44, 56]
+
+function retuRnThis(num){
+    var result;
+    result = num;
+    if(result%2 == 0){
+        return result*2;
+    }
+    else{
+        return result;
+    }
+}
+
+function LoopThisArray(num){
+    for (let i = 0; i < num.length; i++) {
+        const element = num[i];
+        console.log(retuRnThis(element)) ;
+    }
+}
+LoopThisArray(array);
