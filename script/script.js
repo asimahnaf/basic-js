@@ -428,19 +428,44 @@
 // ____________________________________________________
 // call back functuon
 
-function CallBackFunction(name, age, task){
-    console.log("Hello", name);
-    console.log('your age:', age);
-    task();
-}
+// function CallBackFunction(name, age, task){
+//     console.log("Hello", name);
+//     console.log('your age:', age);
+//     task();
+// }
 
- function WashHand(){
-    console.log('Wash your hand with soap');
- }
+//  function WashHand(){
+//     console.log('Wash your hand with soap');
+//  }
 
- function Shower(){
-    console.log('Take shower');
- }
+//  function Shower(){
+//     console.log('Take shower');
+//  }
 
- CallBackFunction('zohir', 13, WashHand);
- CallBackFunction('Raihan', 15, Shower);
+//  CallBackFunction('zohir', 13, WashHand);
+//  CallBackFunction('Raihan', 15, Shower);
+
+
+//  ___________________________________________________
+//  arguments
+// function addNumber(number1, number2){
+//     console.log(arguments);
+//     console.log(arguments[3]);
+//     return number1+number2
+// }
+
+// console.log(addNumber(3, 5, 4, 33));
+
+// function addNumber(num1, num2){
+//     var sum = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//         const number = arguments[i];
+//         console.log(number);
+
+//         sum = sum+number;
+//     }
+
+// }
+
+// addNumber(23, 40, 32);
+// console.log('add number = ', addNumber(32,43,433,23,322));
