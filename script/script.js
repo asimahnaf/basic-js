@@ -469,3 +469,16 @@
 
 // addNumber(23, 40, 32);
 // console.log('add number = ', addNumber(32,43,433,23,322));
+
+// ______________________________________
+// function Diclearition Technic 
+// function massage(massage){
+//     console.log(massage);
+// }
+
+// function helloween(){
+//    massage('this massage is for you.');
+// }
+
+//  helloween();
+
