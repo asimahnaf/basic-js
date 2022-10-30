@@ -397,30 +397,50 @@
 
 // _________________________________________
 // return function
+// var array = [12, 21, 32, 42, 55, 53, 51, 44, 56]
+// var evenArray  = [];
+// var oddNumber = [];
+// function retuRnThis(num){
+//     var result;
+//     result = num;
+//     if(result%2 == 0){
+//         evenArray.push(result);
+//         return result*2;
 
-var array = [12, 21, 32, 42, 55, 53, 51, 44, 56]
-var evenArray  = [];
-var oddNumber = [];
-function retuRnThis(num){
-    var result;
-    result = num;
-    if(result%2 == 0){
-        evenArray.push(result);
-        return result*2;
+//     }
+//     else{
+//         oddNumber.push(result);
+//         return result;
+//     }
+// }
 
-    }
-    else{
-        oddNumber.push(result);
-        return result;
-    }
+// function LoopThisArray(num){
+//     for (let i = 0; i < num.length; i++) {
+//         const element = num[i];
+//         console.log(retuRnThis(element)) ;
+//     }
+// }
+// LoopThisArray(array);
+// console.log(evenArray);
+// console.log(oddNumber);
+
+
+// ____________________________________________________
+// call back functuon
+
+function CallBackFunction(name, age, task){
+    console.log("Hello", name);
+    console.log('your age:', age);
+    task();
 }
 
-function LoopThisArray(num){
-    for (let i = 0; i < num.length; i++) {
-        const element = num[i];
-        console.log(retuRnThis(element)) ;
-    }
-}
-LoopThisArray(array);
-console.log(evenArray);
-console.log(oddNumber);
+ function WashHand(){
+    console.log('Wash your hand with soap');
+ }
+
+ function Shower(){
+    console.log('Take shower');
+ }
+
+ CallBackFunction('zohir', 13, WashHand);
+ CallBackFunction('Raihan', 15, Shower);
