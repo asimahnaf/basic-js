@@ -7,4 +7,4 @@ for (let i = 0; i < num.length; i++) {
 //     else{
 //         console.log(element, " :number is odd =");
 //     }
-// }
+}
